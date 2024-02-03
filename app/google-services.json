@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338188141718",
+    "project_id": "aerial-acre-401512",
+    "storage_bucket": "aerial-acre-401512.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338188141718:android:0d513f23c219c34e4e2eb7",
+        "android_client_info": {
+          "package_name": "com.example.bullsapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu4iFy6-_Owver_AcNlnZwVDjdWZkz_y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

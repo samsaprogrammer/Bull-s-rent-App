@@ -1,0 +1,39 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fece2f"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="345dp"
+        android:layout_marginStart="10dp"
+        android:transitionName="logo_image"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/bull"
+        android:id="@+id/imageView"
+         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:text="Bull's Rent"
+        android:transitionName="logo_text"
+        android:textAlignment="center"
+        android:textSize="70dp"
+        android:textColor="#201F1C"
+ />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic"
+        android:text="Nation wide Car rental app"
+        android:textAlignment="center"
+        android:textColor="#201F1C"
+        android:textSize="20dp" />
+</LinearLayout>

@@ -1,0 +1,133 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/login"
+        android:transitionName="logo_image"
+        android:id="@+id/logo_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there, Welcome Back"
+        android:textSize="40sp"
+        android:transitionName="logo_text"
+        android:fontFamily="@font/bangers"
+        android:id="@+id/logo_name"
+        android:textColor="#201F1C"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign In to continue"
+        android:textSize="10sp"
+        android:id="@+id/slogan"
+        android:transitionName="logo_dec"
+        android:textColor="#201F1C"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+<!--  .................      Username Section start     ................-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="Username"
+            android:transitionName="username_tran"
+            android:textColorHint="#000"
+            app:hintTextColor="#000"
+            app:boxStrokeColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--  .................      Username Section End     ................-->
+
+
+        <!--  .................      Password Section start     ................-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:textColorHint="#000"
+            app:hintTextColor="#000"
+            app:boxStrokeColor="#000"
+            app:passwordToggleEnabled="true"
+            android:hint="Password"
+            app:passwordToggleTint="#000"
+            android:transitionName="password_tran"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="#000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--  .................      Password Section End     ................-->
+
+
+        <!-- ...............  Forget password Button section Start        ...................-->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="Forget Password?"
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:elevation="0dp"
+            android:layout_margin="5dp"/>
+<!--        ......    Forget password section End  ...........................-->
+
+
+
+
+<!--        ........   Go Button section start  ............................-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:transitionName="button_tran"
+            android:background="#000"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:onClick="loginUser"/>
+<!--        ....... Go Button Section End...................-->
+
+
+<!--        .........New User Button Section Start ...............-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="New User? SIGN UP"
+            android:textColor="#000"
+            android:layout_gravity="right"
+            android:fontFamily="@font/antic"
+            android:elevation="0dp"
+            android:id="@+id/signup_screen"
+            android:transitionName="login_signup_tran"
+            android:layout_margin="5dp"/>
+<!--        ..........  New User Button section end ...................-->
+
+
+
+    </LinearLayout>
+</LinearLayout>
